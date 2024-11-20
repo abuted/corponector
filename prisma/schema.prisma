@@ -11,9 +11,9 @@ generator client {
 datasource db {
   provider = "postgresql"
   // for local development
-  url      = env("DATABASE_URL")
+  url      = "postgres://neondb_owner:ubOf9t3nwqFE@ep-patient-cell-a4ocfhq1-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require"
   // for Vercel
-  // url       = env("POSTGRES_PRISMA_URL")
+  // url       = "postgres://neondb_owner:ubOf9t3nwqFE@ep-patient-cell-a4ocfhq1-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require&pgbouncer=true&connect_timeout=15"
   // directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
